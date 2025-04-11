@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Fitness Gym</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1 class="logo_parte_1">Fitness<span class="logo_parte_2">Gym</span></h1>
+        </div>
+        <nav>
+            <a href="index.html" class="boton_menu">Inicio</a>
+            <a href="registro.html" class="boton_menu">Registrarse</a>
+        </nav>
+    </header>
+
+    <section>
+        <div>
+            <h2>Registro de Membresía</h2>
+            <p>Completa el formulario para comenzar a entrenar</p>
+        </div>
+
+        <form class="registro">
+            <div>
+                <h3>Datos Personales</h3>
+                </br>
+                <label for="nombre">Nombre Completo*</label>
+                <input type="text" name="nombre" placeholder="Ingresa tu nombre completo" title="Nombre Completo"
+                    required>
+
+                <label for="email">Email*</label>
+                <input type="email" name="email" placeholder="Ingresa tu correo electrónico" title="Correo Electrónico"
+                    required>
+
+                <label for="telefono">Teléfono*</label>
+                <input type="tel" name="telefono" placeholder="Ingresa tu número de teléfono" title="Número de Teléfono"
+                    required>
+            </div>
+
+            <div>
+                <h3>Elige tu Plan</h3>
+                <div class="plan">
+                    <input type="radio" name="plan" value="basico" title="Selecciona el Plan Básico" required>
+                    <label for="plan_basico">
+                        <span>Plan Básico</span>
+                        <span>$25000/mes</span>
+                    </label>
+                </div>
+
+                <div class="plan">
+                    <input type="radio" name="plan" value="premium" title="Selecciona el Plan Premium" checked>
+                    <label for="plan_premium">
+                        <span>Plan Premium</span>
+                        <span>$40000/mes</span>
+                    </label>
+                </div>
+
+                <div class="plan">
+                    <input type="radio" name="plan" value="diamond" title="Selecciona el Plan Diamond">
+                    <label for="plan_diamond">
+                        <span>Plan Diamond</span>
+                        <span>$50000/mes</span>
+                    </label>
+                </div>
+            </div>
+
+            <div>
+                <h3>Horarios Disponibles</h3>
+                </br>
+                <h4>Días de entrenamiento</h4>
+                <input type="checkbox" name="dias" value="lunes" title="Selecciona el día lunes">
+                <label for="dia_lunes">Lunes</label>
+
+                <input type="checkbox" name="dias" value="miercoles" title="Selecciona el día miércoles">
+                <label for="dia_miercoles">Miércoles</label>
+
+                <input type="checkbox" name="dias" value="viernes" title="Selecciona el día viernes">
+                <label for="dia_viernes">Viernes</label>
+
+                </br>
+                </br>
+                <h4>Franjas horarias</h4>
+                <input type="checkbox" name="horarios" value="mañana" title="Selecciona el horario de la mañana">
+                <label for="horario_mañana">Mañana (8:00 - 12:00)</label>
+
+                <input type="checkbox" name="horarios" value="tarde" title="Selecciona el horario de la tarde">
+                <label for="horario_tarde">Tarde (16:00 - 20:00)</label>
+            </div>
+
+            <button type="submit">Enviar Registro</button>
+        </form>
+    </section>
+
+    <footer>
+        <h3 class="logo_parte_1">Fitness<span class="logo_parte_2">Gym</span></h3>
+        <p>Av. Ejemplo 1234, CABA</p>
+        <p>Tel: (011) 4567-8901</p>
+        <p>&copy; 2025 Fitness Gym. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
